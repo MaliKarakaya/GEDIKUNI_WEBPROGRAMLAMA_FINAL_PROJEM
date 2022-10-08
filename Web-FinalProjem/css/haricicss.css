@@ -1,0 +1,324 @@
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+:root{
+    --orange:#e67e22;
+    --black:#333;
+    --light-color:#777;
+    --border:.1rem solid rgba(0,0,0,.2);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+section{
+    padding:2rem 7%;
+}
+.header{
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    padding:1.2rem 7%;
+}
+
+.header .logo{
+    color:var(--black);
+    font-size: 2.5rem;
+    margin-right: auto;
+}
+
+.header .logo span{
+    color:var(--orange);
+}
+.menu a{
+    color:var(--light-color);
+    margin-right: 2rem;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+
+.menu a:hover{
+    color:var(--orange);
+}
+
+.banner{
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    padding-top: 8rem;
+}
+.banner .kutu{
+    text-align: center;
+    background:#fff;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding:3rem;
+    max-width: 50rem;
+}
+
+.banner .kutu h3{
+    font-size: 4rem;
+    color:var(--black);
+    text-transform: uppercase;
+}
+.bannerbtn{
+    margin-top: 1rem;
+    display: inline-block;
+    background:var(--black);
+    color:#fff;
+    border-radius: .5rem;
+    padding:.9rem 3rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.bannerbtn:hover{
+    background:var(--orange);
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap:1.5rem;
+    background:#eee;
+}
+
+.blogkutu{
+    width:100%;
+    padding:2rem;
+    background:#fff;
+    border:var(--border);
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+.blogkutu .image{
+    height: 40rem;
+    width:100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+.blogkutu .ic{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    color:var(--orange);
+}
+.blogkutu .baslik{
+    padding-top: 1.5rem;
+    font-size: 2.5rem;
+    color:var(--black);
+}
+.blogkutu .yazi{
+    color:var(--light-color);
+    font-size: 1.6rem;
+    line-height: 1.7;
+    padding:1rem 0;
+}
+.yanekler .Ykutu{
+    
+    border:var(--border);
+    border-radius: .5rem;
+    overflow:hidden;
+    background:#fff;
+    margin-bottom: 1.5rem;
+}
+.Ybaslik{
+    padding:1.5rem;
+    font-size: 2rem;
+    color:#fff;
+    background:var(--black);
+    text-transform: capitalize;
+}
+
+.hakkımda{
+    text-align: center;
+    padding:1rem 1.5rem;
+}
+
+.hakkımda img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin:1rem 0;
+}
+
+.hakkımda h3{
+    color:var(--orange);
+    font-size: 2rem;
+}
+
+.hakkımda p{
+    color:var(--light-color);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding:1rem;
+}
+.Yblog{
+    padding:1rem 1.5rem;
+}
+.Yblog a{
+    padding:.4rem 0;
+    font-size: 1.5rem;
+    color:var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Yblog a span{
+    background:var(--light-color);
+    color:#fff;
+    border-radius: .5rem;
+    padding:.5rem;
+}
+
+.Yblog a:hover{
+    color:var(--orange);
+}
+
+.Yblog a:hover span{
+    background-color:var(--orange);
+}
+.footer{
+    background-color:#d3d3d3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .lisans{
+    text-transform: capitalize;
+    font-size: 2rem;
+    color:var(--black);
+    padding: 1rem 0;
+}
+
+.footer .lisans span{
+    color:var(--orange);
+}
+
+.dersler{
+	margin:0px auto;
+margin-left:120px;
+	float:left;
+	width:250px;
+	height:250px;
+	padding:10px;
+}
+.dersler:hover{
+
+	color:black;
+	background:#D3D3D3;
+}
+.Dresim img
+{
+
+	width:220px;
+	height:200px;
+}
+.Dresimyazi{
+	line-height:50px;
+	text-align:center;
+	width:250px;
+	height:50px;
+	font-family:Monotype Corsiva;
+	font-size:32px;
+	color:#FF7F00;
+}
+#oturumac{
+                
+    border-radius:10px;
+    background:#ffffff;
+    width:360px;
+    margin:auto;
+    margin-top:20px;
+    padding:15px;
+    text-align:center;
+    opacity:0.8;
+}
+.oturuminput{
+    border-radius:5px;
+    border:none;
+    width:300px;
+    height:50px;
+    margin:20px 0px 20px 0px;
+    background:rgba(240,240,240,.5);
+    padding-left:15px;
+    font-style:italic;
+    
+}
+.oturumbtn{
+    background:#e67e22;
+    color:white;
+    border-radius:5px;
+    border:none;
+    width:300px;
+    height:50px;
+    opacity:1;
+    padding-left:15px;
+    font-style:italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
